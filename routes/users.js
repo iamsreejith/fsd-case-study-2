@@ -103,7 +103,7 @@ router.post("/signup", async function(req, res) {
 
   // console.log(auth);
 
-  res.redirect('/login');
+  res.redirect('/');
 
 });
 module.exports = router;
