@@ -1,0 +1,32 @@
+
+
+    
+
+
+    <section>
+        <div class="container mt-5">
+          <div class="row">
+            <%for(i=0; i<books.length; i++){%>
+            <div class="col-md-3 p-3 mr-5">
+           
+        <div class="card" style="width: 20rem;">
+            <img height="200px" src="images/bookImage/<%= books[i].title%>.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=books[i].title%></h5>
+              <p class="card-text"><%=books[i].description%></p>
+              <p class="card-text"><%=books[i].genre%></p>
+              <p class="fst-normal"><b>Author:</b>
+                <a style="text-decoration: none; color: black;" href="/authors/<%=i%>">
+                    <%=books[i].authorName%>
+                </a>
+            </p>
+              <a href="/books/<%=books[i]._id%>" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+            </div>
+            <% }%>
+          </div>
+        </div>
+
+
+      </section>

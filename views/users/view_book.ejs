@@ -1,0 +1,20 @@
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div style="height: auto;" class="col-8">
+                <h2 class="text-center">
+                    <%= SingleBook[0].title %> 
+                </h2><br>
+                <p class="text-center"><%= SingleBook[0].longDescription %></p><br><br>
+                <span><b>Gener : </b><%= SingleBook[0].genre %></span><br> 
+                <p style="margin-top: 10px;"><span><b>Author : </b><%= SingleBook[0].authorName %></span></p>
+                <p style="margin-top: 10px;"><span><b>Price : </b><%= heading %></span></p>
+            </div>
+
+
+            <div style="height: auto;"  class="col-4">
+                <img height="200px" src="images/bookImage/<%= SingleBook[0].title%>.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+    </div>
+</section>

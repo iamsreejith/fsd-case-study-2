@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container mt-5 pl-5">
+            <h2 class="text-center">
+                Create New Account
+            </h2>
+            <form action="/signup" method="POST">
+
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" name="Uname" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="Password" class="form-control" name="Password" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Confirm Password</label>
+                    <input type="Password" class="form-control"  placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress" class="form-label">Address</label>
+                <textarea type="text" name="Address" class="form-control" id="inputAddress" placeholder=""></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Phone" class="form-label">Phone</label>
+                    <input type="text" name="Phone" class="form-control" id="inputAddress" placeholder="">
+                </div>
+
+               
+                <a href="/login">Already have an Account</a>
+                <button type="submit" class="btn btn-primary float-right">SignUp</button>
+            </form>
+        </div>
+    </div>
+</div>

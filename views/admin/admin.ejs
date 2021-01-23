@@ -1,0 +1,35 @@
+
+<section>
+
+  <div class="container-fluid ml-r-5">
+      
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Author Name</th>
+      <th scope="col">Cover Page</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%for(i=0; i<books.length; i++){%>
+    <tr>
+      <th scope="row"><%=i + 1%></th>
+      <td><%=books[i].title%></td>
+      <td><%=books[i].description%></td>
+      <td><%=books[i].genre%></td>
+      <td><%=books[i].authorName%></td>
+      <td><img style="height: 50px; width: 50px;" src="images/bookImage/<%= books[i].title%>.jpg" alt=""></td>
+      <td><a href="/admin/delete/<%=books[i]._id%>" class="btn danger">Delete</a></td>
+    </tr>
+    <%}%>
+    
+  </tbody>
+</table>
+  </div>
+  
+</section>

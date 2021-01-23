@@ -1,0 +1,48 @@
+
+
+    <section>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">Add Book</h2>
+                    <form action="/admin/addbook" method="POST" enctype="multipart/form-data">
+                        <div class="form-floating mb-3">
+                            <label for="floatingInput">Title</label>
+                            <input   name="title" type="text" class="form-control" id="inputEmail4"  placeholder="Book Title">
+                          </div>
+    
+                          <div class="form-floating mb-3">
+                            <label for="floatingInput">Genre</label>
+                            <input class="form-control" placeholder="Genre" name="genre" type="text"  >
+                          </div>
+    
+                          <div class="form-floating mb-3">
+                            <label for="floatingInput">Brief Discription</label>
+                            <input name="description" type="text" placeholder="Brief Discription" class="form-control" >
+                          </div>
+    
+                          <div class="form-floating mb-3">
+                            <label for="floatingInput">Long Discription</label>
+                            <textarea name="longDescription" class="form-control" placeholder="Long Discription" id="exampleFormControlTextarea1" rows="2"></textarea>
+                          </div>
+    
+                          <div class="form-floating mb-3">
+                            <label for="floatingInput">Select Book Cover</label>
+                            <input type="file" class="form-control" placeholder="Select Book Cover" name="CoverImage" >
+                          </div>
+
+                          <div class="form-floating mb-3">
+                            <label for="floatingInput">Author Name</label>
+                            <input  name="authorName" type="text" placeholder="Author Name" class="form-control"   >
+                          </div>
+    
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                          </div>
+    
+                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
