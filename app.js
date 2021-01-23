@@ -1,6 +1,5 @@
 var createError = require('http-errors');
 var express = require('express');
-const port = process.env.PORT || 5005 ;
 var path = require('path');
 const dotenv = require("dotenv");
 var cookieParser = require('cookie-parser');
@@ -70,7 +69,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-app.listen(port , ()=> {
-
-  console.log("server ready at "+ port);
-});
